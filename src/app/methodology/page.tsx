@@ -69,9 +69,7 @@ export default function MethodologyPage() {
         </nav>
 
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Methodology</h1>
-        <p className="text-gray-600 text-lg mb-8">
-          Sources, data processing, and related reviews
-        </p>
+        <p className="text-gray-600 text-lg mb-8">        </p>
         <div className="prose prose-gray max-w-none">
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Data Sources</h2>

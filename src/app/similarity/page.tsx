@@ -25,33 +25,37 @@ export default function SimilarityPage() {
           Agenda Similarity Graph
         </h1>
         <p className="text-gray-600 text-lg mb-6">
-          Interactive visualization showing similarity relationships between
-          research agendas. Agendas are connected when they share approaches,
-          target problems, funders, or community tags. Drag nodes, zoom, and pan
+          Similarity between agendas. Agendas are connected when they share approaches,
+          target problems, funders, or community tags.
+        </p>
+        <p className="text-gray-600 text-lg mb-6">
+          Drag nodes, zoom, and pan
           to explore.
         </p>
 
         {/* Stats summary */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 w-120 gap-4 mb-9">
           <div className="bg-white p-4 rounded-lg shadow-sm">
-            <div className="text-2xl font-bold text-gray-900">{stats.nodeCount}</div>
-            <div className="text-sm text-gray-500">Agendas</div>
+            <div className="text-1xl text-gray-900">{stats.nodeCount}
+            <span className="text-sm text-gray-500"> agendas</span>
+          </div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-sm">
-            <div className="text-2xl font-bold text-gray-900">{stats.edgeCount}</div>
-            <div className="text-sm text-gray-500">Connections</div>
+            <div className="text-1xl text-gray-900">{stats.edgeCount}
+              <span className="text-sm text-gray-500"> connections</span>
+            </div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-sm">
-            <div className="text-2xl font-bold text-gray-900">
+            <div className="text-1xl text-gray-900">
               {stats.avgSimilarity.toFixed(2)}
+              <span className="text-sm text-gray-500"> avg similarity</span>
             </div>
-            <div className="text-sm text-gray-500">Avg Similarity</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-sm">
-            <div className="text-2xl font-bold text-gray-900">
+            <div className="text-1xl text-gray-900">
               {stats.avgEdgesPerNode.toFixed(1)}
+              <span className="text-sm text-gray-500"> avg connections</span>
             </div>
-            <div className="text-sm text-gray-500">Avg Connections</div>
           </div>
         </div>
 

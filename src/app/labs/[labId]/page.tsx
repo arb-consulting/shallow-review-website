@@ -172,7 +172,7 @@ export default async function LabPage({ params }: PageProps) {
               {lab.name}
             </h1>
 
-            <div className="space-y-10">
+            <div className="space-y-10 pt-4">
               {/* Lab Information */}
               {hasLabInfo && (
                 <Section id="lab-info" title="Lab Information" icon={Building2} card>

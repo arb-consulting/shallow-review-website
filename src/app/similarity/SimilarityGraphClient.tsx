@@ -14,7 +14,7 @@ export default function SimilarityGraphClient({ data }: Props) {
   useEffect(() => {
     const updateDimensions = () => {
       // Account for padding and max-width container
-      const containerWidth = Math.min(window.innerWidth - 32, 1152); // max-w-6xl = 72rem = 1152px
+      const containerWidth = Math.min(window.innerWidth - 32, 900); // max-w-6xl = 72rem = 1152px
       setDimensions({
         width: containerWidth,
         height: Math.max(500, Math.min(700, window.innerHeight - 300)),

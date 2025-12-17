@@ -24,7 +24,6 @@ export default function AboutPage() {
 
         <h1 className="text-4xl font-bold text-gray-900 mb-2">About This Review</h1>
         <p className="text-gray-600 text-lg mb-8">
-          Background, scope, and acknowledgments for the {APP_SHORT_TITLE}
         </p>
         <div className="prose prose-gray max-w-none">
           <section className="mb-12">
@@ -117,7 +116,7 @@ export default function AboutPage() {
             <p className="text-gray-700 mb-4">
               We have again settled for a tree data structure for this post – but people and
               work can appear in multiple nodes so it&apos;s not a dumb partition. Richer
-              representation structures may be in the works.
+              representations may be in the works.
             </p>
             <p className="text-gray-700 mb-4">
               The level of analysis for each node in the tree is the &quot;research agenda&quot;,
@@ -307,7 +306,7 @@ export default function AboutPage() {
 
           <section className="border-t border-gray-200 pt-8 mt-12">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Epigrams</h2>
-            <div className="space-y-6">
+            <div className="space-y-12">
               <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600">
                 <p className="mb-2">
                   &quot;No punting — we can&apos;t keep building nanny products. Our products
@@ -336,7 +335,7 @@ export default function AboutPage() {
                   different character — somehow it seemed that, after all our diverse
                   explorations, we had arrived at a shared space.&quot;
                 </p>
-                <footer className="text-sm text-gray-500 not-italic">— Abram Demski</footer>
+                <footer className="text-sm text-gray-500 not-italic pb-4">— Abram Demski</footer>
               </blockquote>
             </div>
 

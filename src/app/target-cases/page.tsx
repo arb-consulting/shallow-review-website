@@ -59,13 +59,13 @@ export default function TargetCasesPage() {
           <span className="text-gray-700">Target Cases</span>
         </nav>
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">Target Cases</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-2 pb-4">Target Cases</h1>
         <p className="text-gray-600 text-lg mb-4">
-          Different assumptions about how difficult AI alignment is. &quot;Pessimistic&quot;
-          approaches assume alignment is hard and require robust solutions, while
+          Assumptions about how difficult alignment is. &quot;Pessimistic&quot;
+          approaches assume alignment is hard, while
           &quot;optimistic&quot; approaches assume current techniques may be sufficient.
         </p>
-        <p className="text-gray-500 text-sm mb-8">
+        <p className="text-gray-500 text-sm mb-8 pb-8">
           Inspired by:{" "}
           <a
             href="https://www.lesswrong.com/posts/67fNBeHrjdrZZNDDK/defining-alignment-research#A_better_definition_of_alignment_research"

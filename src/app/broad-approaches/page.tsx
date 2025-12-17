@@ -62,12 +62,11 @@ export default function BroadApproachesPage() {
           <span className="text-gray-700">Broad Approaches</span>
         </nav>
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">Broad Approaches</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-2 pb-4">Broad Approaches</h1>
         <p className="text-gray-600 text-lg mb-4">
-          Research methodologies and paradigms used across AI alignment
-          research agendas. Many agendas combine multiple approaches.
+          The rough methods used across agendas. Many agendas combine multiple of these approaches.
         </p>
-        <p className="text-gray-500 text-sm mb-8">
+        <p className="text-gray-500 text-sm mb-8 pb-8">
           Inspired by:{" "}
           <a
             href="https://www.lesswrong.com/posts/67fNBeHrjdrZZNDDK/defining-alignment-research#A_better_definition_of_alignment_research"

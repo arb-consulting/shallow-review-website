@@ -8,7 +8,7 @@ import AgendaLink from "@/components/AgendaLink";
 export const metadata: Metadata = {
   title: `Orthodox Problems | ${APP_SHORT_TITLE}`,
   description:
-    "Canonical problems in AI alignment that research agendas aim to address",
+    "Noncanonical problems in AI alignment that research agendas could aim to address",
 };
 
 export default function OrthodoxProblemsPage() {
@@ -52,13 +52,19 @@ export default function OrthodoxProblemsPage() {
           <span className="text-gray-700">Orthodox Problems</span>
         </nav>
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">Orthodox Problems</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-2 pb-4">Orthodox Problems</h1>
         <p className="text-gray-600 text-lg mb-4">
-          Canonical problems in AI alignment that various research agendas aim
-          to address. Each problem represents a core challenge or assumption
-          in the field.
+          Noncanonical problems in AI alignment that research agendas could aim to address. Each problem is a core challenge or assumption
+          in one particular view of the field 
+          (the "<a
+            href="https://scottaaronson.blog/?p=6821"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >orthodox
+          </a>" view).
         </p>
-        <p className="text-gray-500 text-sm mb-8">
+        <p className="text-gray-500 text-sm mb-8 pb-8">
           Based on{" "}
           <a
             href={source.url}
@@ -116,7 +122,7 @@ export default function OrthodoxProblemsPage() {
 
                 {agendas.length > 0 && (
                   <div className="mt-4 ml-9">
-                    <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-2">
+                    <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-2 pt-4">
                       Relevant Agendas
                     </h3>
                     <div className="flex flex-wrap gap-2">

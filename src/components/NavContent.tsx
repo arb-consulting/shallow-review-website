@@ -65,7 +65,7 @@ export default function NavContent({
 
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs text-slate-500 font-bold uppercase tracking-widest">
-              classifications
+              classify by:
             </span>
             <div className="flex flex-wrap gap-x-2.5 gap-y-1.5 justify-center text-slate-700">
               <Link
@@ -188,7 +188,7 @@ export default function NavContent({
       {/* Arb Logo */}
       <div className="mt-auto pt-8 pb-4 flex justify-center border-t-2 border-slate-200">
         <a
-          href="https://arb.research"
+          href="https://arbresearch.com"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 hover:opacity-70 transition-opacity"

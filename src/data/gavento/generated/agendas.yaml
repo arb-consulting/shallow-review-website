@@ -630,23 +630,6 @@
 
     * There are [others](https://www.interconnects.ai/i/171165224/honorable-mentions) but they're marginal for now.
   papers: []
-- id: Others
-  name: Other labs
-  parent: Labs
-  description: >
-    * Amazon's [Nova Pro](https://arxiv.org/pdf/2506.12103v1) is around the level of Llama 3 90B, which in turn is
-    around the level of the original GPT-4. So 2 years behind. But they have their own
-    [chip](https://www.businessinsider.com/startups-amazon-ai-chips-less-competitive-nvidia-gpus-trainium-aws-2025-11).
-
-    * Microsoft are [now](https://www.dwarkesh.com/p/satya-nadella-2) mid-training on top of GPT-5. MAI-1-preview is
-    [around](https://lmarena.ai/leaderboard/text) DeepSeek V3.0 level on Arena. They
-    [continue](https://arxiv.org/abs/2506.22405v1) to focus on medical diagnosis. You can
-    [request](https://forms.microsoft.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRyRliS0ly-JEvgSpwo3yWyhUQkdTQktBUkFaWERHR1JFRjgwMlZUUkQxTC4u&route=shorturl)
-    access.
-
-    * Mistral have a reasoning model, [Magistral Medium](https://arxiv.org/pdf/2506.10910), and released the weights of
-    a little 24B version. It's a bit worse than Deepseek R1, pass@1.
-  papers: []
 - id: Iterative_alignment_at_pretrain_time
   name: Iterative alignment at pretrain-time
   parent: Iterative_alignment

@@ -54,11 +54,10 @@ export default function OverviewPage() {
       <div className="max-w-5xl mx-auto">
         <div className="mb-12">
           <h1 className="text-3xl font-black text-slate-900 font-display mb-2">
-            All Agendas
+            Agendas
           </h1>
           <p className="text-slate-500">
-            {totalAgendas} research agendas across {data.sections.length}{" "}
-            sections
+            (all of the below are clickable)
           </p>
         </div>
 
