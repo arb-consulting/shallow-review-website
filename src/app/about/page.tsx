@@ -47,7 +47,7 @@ export default function AboutPage() {
             <img 
               src="/images/ai-safety-diagram.png"
               alt="AI Safety Diagram" 
-              className="rounded-lg shadow-sm w-full"
+              className="rounded-lg shadow-sm max-w-full w-160 mx-auto"
             />
           </div>
 
@@ -68,7 +68,7 @@ export default function AboutPage() {
           </p>
 
           <p className="mb-6">
-            If we missed something big or got something wrong, please comment, we will edit it in.
+            If we missed something big or got something wrong, please let us know, we will edit it in.
           </p>
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-8 not-prose">
@@ -129,7 +129,7 @@ export default function AboutPage() {
              <img 
               src="/images/arb-logo.png"
               alt="Arb Logo" 
-              className="w-16 h-16 object-contain mb-4"
+              className="w-40 object-contain mb-4"
             />
             <p className="text-sm text-gray-500 italic">
               Brought to you by the <a href="https://arbresearch.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Arb Corporation</a>
