@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Route } from "lucide-react";
+import { getSectionColors } from "../constants/colors";
+import { cn } from "@/lib/utils";
 
 interface AgendaLinkProps {
   sectionId: string;
@@ -12,12 +14,20 @@ export default function AgendaLink({
   sectionId,
   agendaId,
   name,
-  className = "inline-flex items-center gap-1.5 text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors",
+  className,
 }: AgendaLinkProps) {
+  const colors = getSectionColors(sectionId);
+
   return (
     <Link
       href={`/${sectionId}/${agendaId}`}
-      className={className}
+      className={cn(
+        "inline-flex items-center gap-1.5 text-sm px-3 py-1 rounded-full transition-colors",
+        colors.bgLight,
+        colors.heading,
+        colors.hoverBg,
+        className
+      )}
     >
       <Route className="w-3.5 h-3.5" />
       {name}
