@@ -150,6 +150,32 @@ export default function MethodologyPage() {
     },
   ];
 
+  const inactiveOrgs = [
+    { name: "Safe Superintelligence Inc. (SSI)", url: "https://ssi.inc/" },
+    { name: "Conjecture: Cognitive Software", url: null },
+    { name: "Orthogonal / QACI", url: "https://orxl.org/" },
+    { name: "modelingcooperation.com", url: "https://www.modelingcooperation.com/research" },
+    { name: "Pr(Ai)2R", url: "https://prair.group/" },
+    { name: "Astera Obelisk", url: "https://astera.org/program/obelisk/" },
+    { name: "Coordinal Research (Thibodeau)", url: "https://coordinal.org/" },
+    { name: "Workshop Labs (Drago, Laine)", url: "https://workshoplabs.ai/" },
+  ];
+
+  const graveyard = [
+    {
+      name: "Adversarially Robust Augmentation and Distillation",
+      url: "https://www.lesswrong.com/posts/RRvdRyWrSqKW2ANL9/alignment-proposal-adversarially-robust-augmentation-and",
+    },
+    {
+      name: "Half of FAIR including JEPA",
+      url: "https://www.ft.com/content/c586eb77-a16e-4363-ab0b-e877898b70de",
+    },
+    {
+      name: "Science of Evals (but see recent paper)",
+      url: "https://www.apolloresearch.ai/blog/we-need-a-science-of-evals/",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50">
       <main className="max-w-4xl mx-auto px-4 py-8">
@@ -595,6 +621,58 @@ export default function MethodologyPage() {
                 “Model specs”, “character training” and “representation
                 geometry”. ”Evals” is so massive it gets a top-level section.
               </li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Orgs without public outputs this year
+            </h2>
+            <p className="text-gray-700 mb-4">
+              We are not aware of public technical AI safety output with these
+              agendas and organizations, though they are active otherwise.
+            </p>
+            <ul className="space-y-2">
+              {inactiveOrgs.map((org, i) => (
+                <li key={i} className="text-gray-700">
+                  {org.url ? (
+                    <a
+                      href={org.url}
+                      className="text-blue-600 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {org.name}
+                    </a>
+                  ) : (
+                    <span>{org.name}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Graveyard (known to be inactive)
+            </h2>
+            <ul className="space-y-2">
+              {graveyard.map((item, i) => (
+                <li key={i} className="text-gray-700">
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      className="text-blue-600 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <span>{item.name}</span>
+                  )}
+                </li>
+              ))}
             </ul>
           </section>
 
