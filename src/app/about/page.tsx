@@ -26,7 +26,7 @@ export default function AboutPage() {
         
         <div className="prose prose-gray max-w-none text-gray-700">
           <p className="italic mb-6">
-            This is the third annual review of what’s going on in technical AI safety. This review is also published as a <a href="https://www.lesswrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LessWrong and Alignment Forum post</a>, and is accompanied by an opinionated editorial: <a href="https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AI in 2025: gestalt</a>.
+            This is the third annual 'shallow' review of what’s going on in technical AI safety.
           </p>
 
           <hr className="my-8 border-gray-200" />
