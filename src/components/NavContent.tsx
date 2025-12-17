@@ -97,19 +97,19 @@ export default function NavContent({
         {/* Internal Pages - Single Line */}
         <div className="flex flex-wrap gap-x-2.5 gap-y-1.5 justify-center text-slate-700 text-sm">
           <Link
-            href="/methodology"
-            className="text-blue-600 font-semibold transition-colors"
-            onClick={onNavigate}
-          >
-            Methods
-          </Link>
-          <span className="text-slate-300 font-bold">·</span>
-          <Link
             href="/about"
             className="text-blue-600 font-semibold transition-colors"
             onClick={onNavigate}
           >
             About
+          </Link>
+          <span className="text-slate-300 font-bold">·</span>
+          <Link
+            href="/methodology"
+            className="text-blue-600 font-semibold transition-colors"
+            onClick={onNavigate}
+          >
+            Methods
           </Link>
           <span className="text-slate-300 font-bold">·</span>
           <a

@@ -548,7 +548,7 @@ export default function MethodologyPage() {
               This review exists in the context of many other efforts to map AI
               safety research:
             </p>
-            <ul className="space-y-2">
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
               {otherReviews.map((review, i) => (
                 <li key={i} className="text-gray-700">
                   {review.url ? (
@@ -632,7 +632,7 @@ export default function MethodologyPage() {
               We are not aware of public technical AI safety output with these
               agendas and organizations, though they are active otherwise.
             </p>
-            <ul className="space-y-2">
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
               {inactiveOrgs.map((org, i) => (
                 <li key={i} className="text-gray-700">
                   {org.url ? (
@@ -656,7 +656,7 @@ export default function MethodologyPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Graveyard (known to be inactive)
             </h2>
-            <ul className="space-y-2">
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
               {graveyard.map((item, i) => (
                 <li key={i} className="text-gray-700">
                   {item.url ? (
