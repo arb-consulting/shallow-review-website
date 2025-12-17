@@ -94,37 +94,11 @@ export default function NavContent({
             </div>
           </div>
         </div>
-
-        {/* External Links */}
-        {/* <div className="space-y-2 flex flex-col items-center text-sm">
-          <a
-            href="https://www.lesswrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-slate-700 hover:text-blue-600 font-semibold transition-colors"
-            onClick={onNavigate}
-          >
-            LessWrong post
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-
-          <a
-            href="https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-slate-700 hover:text-blue-600 font-semibold transition-colors"
-            onClick={onNavigate}
-          >
-            AI in 2025: gestalt
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-        </div> */}
-
         {/* Internal Pages - Single Line */}
         <div className="flex flex-wrap gap-x-2.5 gap-y-1.5 justify-center text-slate-700 text-sm">
           <Link
             href="/methodology"
-            className="hover:text-blue-600 font-semibold transition-colors"
+            className="text-blue-600 font-semibold transition-colors"
             onClick={onNavigate}
           >
             Methods
@@ -132,7 +106,7 @@ export default function NavContent({
           <span className="text-slate-300 font-bold">·</span>
           <Link
             href="/about"
-            className="hover:text-blue-600 font-semibold transition-colors"
+            className="text-blue-600 font-semibold transition-colors"
             onClick={onNavigate}
           >
             About
@@ -142,10 +116,10 @@ export default function NavContent({
             href="https://github.com/arb-consulting/shallow-review-2025"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-slate-700 hover:text-blue-600 font-semibold transition-colors"
+            className="flex items-center gap-1.5 text-blue-600 font-semibold transition-colors"
             onClick={onNavigate}
           >
-            Code and data<ExternalLink className="w-3.5 h-3.5" />
+            Code & data
           </a>
         </div>
 
