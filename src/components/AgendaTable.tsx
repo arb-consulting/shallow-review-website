@@ -3,9 +3,10 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { FlattenedAgenda } from "@/lib/types";
-import { TARGET_CASE_COLORS, FUNDER_COLORS, PROBLEM_COLORS, getSectionColors } from "@/constants/colors";
+import { TARGET_CASE_COLORS, PROBLEM_COLORS, getSectionColors } from "@/constants/colors";
 import ApproachBadge from "./ApproachBadge";
 import { getNameWithoutParentheses } from "@/lib/utils";
+import AgendaLink from "./AgendaLink";
 
 type SortField =
   | "name"
@@ -24,6 +25,7 @@ interface AgendaTableProps {
   agendas: FlattenedAgenda[];
   initialSortField?: SortField;
   sectionOrder?: string[];
+  className?: string;
 }
 
 function truncate(text: string, maxLength: number): string {
@@ -31,7 +33,7 @@ function truncate(text: string, maxLength: number): string {
   return text.slice(0, maxLength).trim() + "...";
 }
 
-export default function AgendaTable({ agendas, initialSortField = "name", sectionOrder = [], className = "" }: AgendaTableProps & { className?: string }) {
+export default function AgendaTable({ agendas, initialSortField = "name", sectionOrder = [], className = "" }: AgendaTableProps) {
   const [sortField, setSortField] = useState<SortField>(initialSortField);
   const [sortDirection, setSortDirection] = useState<SortDirection>("asc");
 
@@ -98,7 +100,7 @@ export default function AgendaTable({ agendas, initialSortField = "name", sectio
     });
 
     return sorted;
-  }, [agendas, sortField, sortDirection]);
+  }, [agendas, sortField, sortDirection, sectionOrder]);
 
   const SortHeader = ({
     field,
@@ -150,13 +152,13 @@ export default function AgendaTable({ agendas, initialSortField = "name", sectio
               className="hover:bg-slate-50"
             >
               {/* Name */}
-              <td className="px-4 py-4 font-serif min-w-[200px] max-w-[280px]">
-                <Link
-                  href={`/${agenda.sectionId}/${agenda.id}`}
-                  className={`text-sm font-bold ${getSectionColors(agenda.sectionId).heading} hover:underline`}
-                >
-                  {agenda.name}
-                </Link>
+              <td className="px-4 py-4 min-w-[200px] max-w-[280px]">
+                <AgendaLink
+                  sectionId={agenda.sectionId}
+                  agendaId={agenda.id}
+                  name={agenda.name}
+                  className="font-bold"
+                />
               </td>
 
               {/* Section */}
@@ -165,7 +167,7 @@ export default function AgendaTable({ agendas, initialSortField = "name", sectio
                   href={`/${agenda.sectionId}`}
                   className="flex items-center gap-2 hover:opacity-70 transition-opacity"
                 >
-                  <span className={`w-2.5 h-2.5 rounded-full flex-shrink-0 ${getSectionColors(agenda.sectionId).dot}`} />
+                  <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${getSectionColors(agenda.sectionId).dot}`} />
                   <span className="text-sm font-display font-bold text-slate-700">
                     {getNameWithoutParentheses(agenda.sectionName)}
                   </span>
