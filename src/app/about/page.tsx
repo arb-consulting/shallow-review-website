@@ -26,7 +26,7 @@ export default function AboutPage() {
         
         <div className="prose prose-gray max-w-none text-gray-700">
           <p className="italic mb-6">
-            This is the third annual review of what’s going on in technical AI safety. This review is also published as a <a href="https://www.lesswrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2" target="_blank" rel="noopener noreferrer">LessWrong and Alignment Forum post</a>, and is accompanied by an opinionated editorial: <a href="https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt" target="_blank" rel="noopener noreferrer">AI in 2025: gestalt</a>.
+            This is the third annual review of what’s going on in technical AI safety. This review is also published as a <a href="https://www.lesswrong.com/posts/Wti4Wr7Cf5ma3FGWa/shallow-review-of-technical-ai-safety-2025-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LessWrong and Alignment Forum post</a>, and is accompanied by an opinionated editorial: <a href="https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AI in 2025: gestalt</a>.
           </p>
 
           <hr className="my-8 border-gray-200" />
@@ -56,15 +56,15 @@ export default function AboutPage() {
           </p>
 
           <p className="mb-6">
-            We ignore a lot of relevant work (including most of capability restraint): things like misuse, policy, strategy, <a href="https://sentinel-team.org/" target="_blank" rel="noopener noreferrer">OSINT</a>, <a href="http://airesilience.net/" target="_blank" rel="noopener noreferrer">resilience</a> and <a href="https://www.forethought.org/research/project-ideas-for-making-transformative-ai-go-well-other-than-by-working-on-alignment" target="_blank" rel="noopener noreferrer">indirect risk</a>, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214" target="_blank" rel="noopener noreferrer">AI</a> <a href="https://arxiv.org/abs/2510.26396" target="_blank" rel="noopener noreferrer">rights</a>, general capabilities evals, and things closer to “<a href="https://docs.google.com/document/d/1BGsbwELOQRKVOO8Ho8S4no1BQeYdjbRZpBmRyk7kOVo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">technical policy</a>” and <a href="https://themultiplicity.ai/" target="_blank" rel="noopener noreferrer">products</a> (like standards, legislation, SL4 datacentres, and automated cybersecurity). We focus on papers and blogposts (rather than say, gdoc samizdat or tweets or Githubs or Discords). We only use public information, so we are off by some additional unknown factor.
+            We ignore a lot of relevant work (including most of capability restraint): things like misuse, policy, strategy, <a href="https://sentinel-team.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">OSINT</a>, <a href="http://airesilience.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">resilience</a> and <a href="https://www.forethought.org/research/project-ideas-for-making-transformative-ai-go-well-other-than-by-working-on-alignment" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">indirect risk</a>, <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">AI</a> <a href="https://arxiv.org/abs/2510.26396" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">rights</a>, general capabilities evals, and things closer to “<a href="https://docs.google.com/document/d/1BGsbwELOQRKVOO8Ho8S4no1BQeYdjbRZpBmRyk7kOVo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">technical policy</a>” and <a href="https://themultiplicity.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">products</a> (like standards, legislation, SL4 datacentres, and automated cybersecurity). We focus on papers and blogposts (rather than say, gdoc samizdat or tweets or Githubs or Discords). We only use public information, so we are off by some additional unknown factor.
           </p>
 
           <p className="mb-6">
-            We try to include things which are early-stage and illegible – but in general we fail and mostly capture legible work on <a href="https://www.lesswrong.com/posts/PMc65HgRFvBimEpmJ/legible-vs-illegible-ai-safety-problems" target="_blank" rel="noopener noreferrer">legible problems</a> (i.e. things you can write a paper on already).
+            We try to include things which are early-stage and illegible – but in general we fail and mostly capture legible work on <a href="https://www.lesswrong.com/posts/PMc65HgRFvBimEpmJ/legible-vs-illegible-ai-safety-problems" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">legible problems</a> (i.e. things you can write a paper on already).
           </p>
 
           <p className="mb-6">
-            Even ignoring all of that as we do, it’s still too long to read. Here’s a spreadsheet version (<a href="https://docs.google.com/spreadsheets/d/1uwqeSkl1fGO7bWbbDdNi5QbJ_Zw_a6HO-XlnO18ohLc/edit?gid=249818450#gid=249818450" target="_blank" rel="noopener noreferrer">agendas</a> and <a href="https://docs.google.com/spreadsheets/d/1uwqeSkl1fGO7bWbbDdNi5QbJ_Zw_a6HO-XlnO18ohLc/edit?gid=803096912#gid=803096912" target="_blank" rel="noopener noreferrer">papers</a>) and <a href="https://github.com/arb-consulting/shallow-review-2025" target="_blank" rel="noopener noreferrer">the github repo</a> including the data and the processing pipeline. Methods down the bottom. Gavin’s editorial outgrew this post and became <a href="https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt" target="_blank" rel="noopener noreferrer">its own thing</a>.
+            Even ignoring all of that as we do, it’s still too long to read. Here’s a spreadsheet version (<a href="https://docs.google.com/spreadsheets/d/1uwqeSkl1fGO7bWbbDdNi5QbJ_Zw_a6HO-XlnO18ohLc/edit?gid=249818450#gid=249818450" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">agendas</a> and <a href="https://docs.google.com/spreadsheets/d/1uwqeSkl1fGO7bWbbDdNi5QbJ_Zw_a6HO-XlnO18ohLc/edit?gid=803096912#gid=803096912" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">papers</a>) and <a href="https://github.com/arb-consulting/shallow-review-2025" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">the github repo</a> including the data and the processing pipeline. Methods down the bottom. Gavin’s editorial outgrew this post and became <a href="https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">its own thing</a>.
           </p>
 
           <p className="mb-6">
@@ -73,25 +73,25 @@ export default function AboutPage() {
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-8 not-prose">
             <p className="text-blue-700 m-0 font-medium">
-              Feedback: <a href="https://forms.gle/hT5caPmV3VSxidqd9" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-800">Submit feedback via this form</a>
+              <a href="https://forms.gle/hT5caPmV3VSxidqd9" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-800">Please submit any feedback, corrections, suggestions etc. here</a>
             </p>
           </div>
 
           <section className="mt-12">
             <h2 className="text-2xl font-bold mb-4">Authors</h2>
             <ul className="list-disc pl-5 space-y-1 mb-6">
-              <li><a href="https://www.gleech.org/" target="_blank" rel="noopener noreferrer">Gavin Leech</a></li>
-              <li><a href="https://gavento.cz/" target="_blank" rel="noopener noreferrer">Tomáš Gavenčiak</a></li>
-              <li><a href="https://www.lesswrong.com/users/stephen-mcaleese" target="_blank" rel="noopener noreferrer">Stephen McAleese</a></li>
-              <li><a href="https://www.lesswrong.com/users/peligrietzer" target="_blank" rel="noopener noreferrer">Peli Grietzer</a></li>
-              <li><a href="https://www.lesswrong.com/users/stag" target="_blank" rel="noopener noreferrer">Stag Lynn</a></li>
-              <li><a href="https://www.lesswrong.com/users/jordine" target="_blank" rel="noopener noreferrer">jordine</a></li>
-              <li><a href="https://www.lesswrong.com/users/ozziegooen" target="_blank" rel="noopener noreferrer">Ozzie Gooen</a></li>
-              <li><a href="https://www.lesswrong.com/users/violet-hour" target="_blank" rel="noopener noreferrer">Violet Hour</a></li>
-              <li><a href="https://www.lesswrong.com/users/ramennaut-1" target="_blank" rel="noopener noreferrer">ramennaut</a></li>
+              <li><a href="https://www.gleech.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Gavin Leech</a></li>
+              <li><a href="https://gavento.cz/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Tomáš Gavenčiak</a></li>
+              <li><a href="https://www.lesswrong.com/users/stephen-mcaleese" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Stephen McAleese</a></li>
+              <li><a href="https://www.lesswrong.com/users/peligrietzer" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Peli Grietzer</a></li>
+              <li><a href="https://www.lesswrong.com/users/stag" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Stag Lynn</a></li>
+              <li><a href="https://www.lesswrong.com/users/jordine" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">jordine</a></li>
+              <li><a href="https://www.lesswrong.com/users/ozziegooen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ozzie Gooen</a></li>
+              <li><a href="https://www.lesswrong.com/users/violet-hour" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Violet Hour</a></li>
+              <li><a href="https://www.lesswrong.com/users/ramennaut-1" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ramennaut</a></li>
             </ul>
             <p className="mt-4 mb-6">
-              This website was created for the Shallow Review project by <a href="https://quantifieduncertainty.org/" target="_blank" rel="noopener noreferrer">QURI</a>, Ozzie and Tomáš.
+              This website was created for the Shallow Review project by <a href="https://quantifieduncertainty.org/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">QURI</a>, Ozzie and Tomáš.
             </p>
           </section>
 
