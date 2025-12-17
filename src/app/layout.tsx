@@ -28,6 +28,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: APP_TITLE,
   description: APP_DESCRIPTION,
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
