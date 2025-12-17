@@ -9,6 +9,7 @@ import {
 } from '@/lib/loadData';
 import { Agenda } from '@/lib/types';
 import { getNameWithoutParentheses } from '@/lib/utils';
+import AgendaLink from '@/components/AgendaLink';
 
 export const metadata = {
   title: "Overview | Shallow Review 2025",
@@ -27,26 +28,6 @@ export default function OverviewPage() {
   // Helper to get children for a parent from structure
   function getStructureChildren(parentId: string): string[] {
     return orderMap.get(parentId) || [];
-  }
-
-  // Helper to render agenda links
-  function AgendaLink({
-    agenda,
-    sectionId,
-    colors,
-  }: {
-    agenda: Agenda;
-    sectionId: string;
-    colors: ReturnType<typeof getSectionColors>;
-  }) {
-    return (
-      <Link
-        href={`/${sectionId}/${agenda.id}`}
-        className={`text-sm text-slate-600 ${colors.hover} hover:underline transition-colors`}
-      >
-        {agenda.name}
-      </Link>
-    );
   }
 
   return (
@@ -107,7 +88,7 @@ export default function OverviewPage() {
                 className="flex gap-6 md:gap-10 py-6 first:pt-0"
               >
                 {/* Section label - fixed width on left */}
-                <div className="w-36 md:w-44 flex-shrink-0">
+                <div className="w-36 md:w-44 shrink-0">
                   <Link
                     href={`/${section.id}`}
                     className={`${colors.text} font-display text-md font-black hover:underline transition-colors block leading-snug`}
@@ -150,9 +131,9 @@ export default function OverviewPage() {
                                 {children.map((child) => (
                                   <AgendaLink
                                     key={child.id}
-                                    agenda={child}
                                     sectionId={section.id}
-                                    colors={colors}
+                                    agendaId={child.id}
+                                    name={child.name}
                                   />
                                 ))}
                               </div>
@@ -172,9 +153,9 @@ export default function OverviewPage() {
                               {standaloneAgendas.map((agenda) => (
                                 <AgendaLink
                                   key={agenda.id}
-                                  agenda={agenda}
                                   sectionId={section.id}
-                                  colors={colors}
+                                  agendaId={agenda.id}
+                                  name={agenda.name}
                                 />
                               ))}
                             </div>
@@ -188,9 +169,9 @@ export default function OverviewPage() {
                       {agendas.map((agenda) => (
                         <AgendaLink
                           key={agenda.id}
-                          agenda={agenda}
                           sectionId={section.id}
-                          colors={colors}
+                          agendaId={agenda.id}
+                          name={agenda.name}
                         />
                       ))}
                     </div>
